@@ -1,0 +1,26 @@
+### CREATE COMPONENT
+POST http://localhost:3000/components
+Content-Type: application/json
+
+{
+    "name" : "Sabun LifeBoy",
+    "description" : "Sabun Dengan Nature Protect"
+}
+
+### GET ALL COMPONENT
+GET  http://localhost:3000/components
+
+### GET COMPONENT BY ID
+GET  http://localhost:3000/components/2
+
+### UPDATE COMPONENT
+PUT  http://localhost:3000/components/2
+Content-Type: application/json
+
+{
+    "description" : "Sabun AntiBacterial Soap"
+}
+
+### DELETE COMPONENT
+DELETE http://localhost:3000/components/1
+Content-Type: application/json

@@ -1,0 +1,27 @@
+### CREATE SUPPLIER
+POST http://localhost:3000/suppliers
+Content-Type: application/json
+
+{
+    "name" : "Susan",
+    "email" : "susan@gmail.com",
+    "address" : "Jakarta"
+}
+
+### GET ALL SUPPLIER
+GET  http://localhost:3000/suppliers
+
+### GET BY ID SUPPLIER
+GET  http://localhost:3000/suppliers/1
+
+### UPDATE SUPPLIER
+PUT  http://localhost:3000/suppliers/1
+Content-Type: application/json
+
+{
+    "address" : "Bandung"
+}
+
+### DELETE SUPPLIER
+DELETE http://localhost:3000/suppliers/2
+Content-Type: application/json

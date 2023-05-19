@@ -1,0 +1,26 @@
+### CREATE PRODUCT
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name" : "Sabun Mandi",
+    "quantity" : 10
+}
+
+### GET ALL PRODUCT
+GET  http://localhost:3000/products
+
+### GET PRODUCT BY ID
+GET  http://localhost:3000/products/1
+
+### UPDATE PRODUCT
+PUT  http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+    "quantity" : 15
+}
+
+### DELETE PRODUCT
+DELETE http://localhost:3000/products/2
+Content-Type: application/json
